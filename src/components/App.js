@@ -21,9 +21,9 @@ const App = () => {
 
     const handleKeyDown = event => {
       if (event.keyCode === 13) {
-        const inputValue = parseInt(input);
+        const inputValue = input;
         if (!isNaN(inputValue) && inputValue > 0) {
-          setTimeLeft(inputValue);
+          setTimeLeft(parseInt(inputValue));
         } else {
           setTimeLeft(0);
         }
